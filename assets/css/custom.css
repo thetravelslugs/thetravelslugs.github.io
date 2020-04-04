@@ -18,7 +18,7 @@ section {
     height: 350px;
 }
 
-.info {
+.mapinfo {
     padding: 8px 8px;
     font-size: 14px;
     color: black;
@@ -26,6 +26,12 @@ section {
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 5px;
     width: auto;
+}
+
+@media (max-width: 767px) {
+  .mapinfo {
+    display: none;
+  }
 }
 
 ul {

@@ -20,10 +20,11 @@
 {"image":"https://thetravelslugs.github.io/assets/img/personal/main_illustation.jpg","url":"https://thetravelslugs.github.io/country/denmark/","description":"We’re a couple who love to travel together and explore new corners of the globe. This blog will follow our travels and give us a place where we can pass on our top tips!","@type":"WebPage","headline":"Denmark","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli:300,400,700">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css">
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.default.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
 </head>
@@ -73,8 +74,7 @@
     <div>
         <div class="row">
             <div class="col-lg-8">
-                <h2 class="h3"><p>Denmark</p>
-</h2>
+                <h2 class="h3">Denmark</h2>
             </div>
         </div>
     </div>
@@ -121,7 +121,7 @@
                 <a href="/news/2020/welcome">
                 <div class="item d-flex align-items-center">
                     <div class="image"><img src="/assets/img/personal/main_illustration.jpg" alt="..." class="img-fluid"></div>
-                    <div class="title"><strong>Welcome to _The Travel Slugs_</strong>
+                    <div class="title"><strong>Welcome to <i>The Travel Slugs</i></strong>
                         <div class="post-meta d-flex justify-content-between">
                             <div class="date small "><i class="far fa-clock"></i> 20 February 2020</div>
                         </div>
@@ -206,15 +206,16 @@
             </div>
         </div>
     </div>
-</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
+</footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
+<script src="//unpkg.com/leaflet-gesture-handling"></script>
 
 
 <script>
     <!-- Create map and set it its default values -->
-    var map = L.map('mapid', {scrollWheelZoom: false}).setView([42.5, 0], 2);
+    var map = L.map('mapid', {gestureHandling: true}).setView([42.5, 0], 2);
     map.setMinZoom(2);
     map.setMaxZoom(12);
 
@@ -224,7 +225,7 @@
     var info = L.control({position: 'bottomleft'});
 
     info.onAdd = function (map) {
-        this._div = L.DomUtil.create('div', 'info');
+        this._div = L.DomUtil.create('div', 'mapinfo');
         this.update();
         return this._div;
     };

@@ -22,10 +22,11 @@
 {"mainEntityOfPage":{"@type":"WebPage","@id":"https://thetravelslugs.github.io/travel/2020/roman-holiday"},"image":"https://thetravelslugs.github.io/assets/img/posts/2020/roman-holiday/thumbnail.jpg","url":"https://thetravelslugs.github.io/travel/2020/roman-holiday","description":"Our love of history and food combine in Italy’s beautiful capital city","@type":"BlogPosting","headline":"Roman Holiday","dateModified":"2020-01-24T00:00:00+00:00","datePublished":"2020-01-24T00:00:00+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli:300,400,700">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css">
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.default.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
 </head>
@@ -75,8 +76,7 @@
     <div>
         <div class="row">
             <div class="col-lg-8">
-                <h2 class="h3"><p>Roman Holiday</p>
-</h2>
+                <h2 class="h3">Roman Holiday</h2>
             </div>
         </div>
     </div>
@@ -389,7 +389,7 @@ great for their business. Good karma, right?</li>
                 <a href="/news/2020/welcome">
                 <div class="item d-flex align-items-center">
                     <div class="image"><img src="/assets/img/personal/main_illustration.jpg" alt="..." class="img-fluid"></div>
-                    <div class="title"><strong>Welcome to _The Travel Slugs_</strong>
+                    <div class="title"><strong>Welcome to <i>The Travel Slugs</i></strong>
                         <div class="post-meta d-flex justify-content-between">
                             <div class="date small "><i class="far fa-clock"></i> 20 February 2020</div>
                         </div>
@@ -474,15 +474,16 @@ great for their business. Good karma, right?</li>
             </div>
         </div>
     </div>
-</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
+</footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
+<script src="//unpkg.com/leaflet-gesture-handling"></script>
 
 
 <script>
     <!-- Create map and set it its default values -->
-    var map = L.map('mapid', {scrollWheelZoom: false}).setView([42.5, 0], 2);
+    var map = L.map('mapid', {gestureHandling: true}).setView([42.5, 0], 2);
     map.setMinZoom(2);
     map.setMaxZoom(18);
 
