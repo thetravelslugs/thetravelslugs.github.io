@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Search | The Travel Slugs</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Search" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="We’re a couple who love to travel together and explore new corners of the globe. This blog will follow our travels and give us a place where we can pass on our top tips!" />
+<meta property="og:description" content="We’re a couple who love to travel together and explore new corners of the globe. This blog will follow our travels and give us a place where we can pass on our top tips!" />
+<link rel="canonical" href="https://thetravelslugs.github.io/search/" />
+<meta property="og:url" content="https://thetravelslugs.github.io/search/" />
+<meta property="og:site_name" content="The Travel Slugs" />
+<meta property="og:image" content="https://thetravelslugs.github.io/assets/img/personal/main_illustation.jpg" />
+<script type="application/ld+json">
+{"image":"https://thetravelslugs.github.io/assets/img/personal/main_illustation.jpg","url":"https://thetravelslugs.github.io/search/","description":"We’re a couple who love to travel together and explore new corners of the globe. This blog will follow our travels and give us a place where we can pass on our top tips!","@type":"WebPage","headline":"Search","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.default.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+</head>
+<body><header class="header">
+    <nav class="navbar navbar-expand-md">
+        <div class="navbar-header d-flex align-items-center justify-content-between">
+            <a class="navbar-brand" href="/">TheTravelSlugs</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
+        </div>
+        <div id="navbarcollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/news/">
+                        News
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/travel/">
+                        Travel
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact/">
+                        Contact
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about/">
+                        About
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-text"><a href="/search/?query=" class="search-btn"><i class="fas fa-search"></i></a></div>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div id="mapid"></div>
+</section>
+    <section class="intro no-padding-bottom">
+    <div>
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="h3"><p>Search</p>
+</h2>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="content no-padding-top">
+    <div class="row">
+        <main class="col-lg-8 no-padding-top no-padding-bottom"><div class="container p-3 no-padding-bottom">
+    <ul id="search-results"></ul>
+
+</div>
+
+            
+        </main><aside class="col-lg-4 no-padding-top no-padding-bottom">
+    <div class="container p-3">
+        <!-- Widget [Search Bar Widget]-->
+        <div class="widget search">
+            <header>
+                <h3 class="h6">Search the blog</h3>
+            </header>
+            <form class="search-form" action="/search/" method="get">
+                <div class="form-group">
+                    <input type="text" id="search-box" name="query" placeholder="What are you looking for?">
+                    <button type="submit" class="submit" value="search"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+        <!-- Widget [About Widget]        -->
+        <div class="widget about">
+            <header>
+                <h3 class="h6">About</h3>
+            </header>
+            <div class="image"><img src="/assets/img/personal/main.jpg" alt="..." class="img-fluid"></div>
+            <div class="post p-3 no-padding-bottom">
+                <p class="text-muted">
+                    We're a couple who love to travel together and explore new corners of the globe. This blog will follow our travels and give us a place where we can pass on our top tips! Welcome to <b><em>The Travel Slugs</em></b>.
+                </p>
+            </div>
+        </div>
+        <!-- Widget [Latest Posts Widget]        -->
+        <div class="widget latest-posts">
+            <header>
+                <h3 class="h6">Latest Posts</h3>
+            </header>
+            <div class="blog-posts">
+                <a href="/news/2020/welcome">
+                <div class="item d-flex align-items-center">
+                    <div class="image"><img src="/assets/img/personal/main_illustration.jpg" alt="..." class="img-fluid"></div>
+                    <div class="title"><strong>Welcome to _The Travel Slugs_</strong>
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="date small "><i class="far fa-clock"></i> 20 February 2020</div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/travel/2020/roman-holiday">
+                <div class="item d-flex align-items-center">
+                    <div class="image"><img src="/assets/img/posts/2020/roman-holiday/thumbnail.jpg" alt="..." class="img-fluid"></div>
+                    <div class="title"><strong>Roman Holiday</strong>
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="date small "><i class="far fa-clock"></i> 24 January 2020</div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/travel/2019/paris-where-it-sizzles">
+                <div class="item d-flex align-items-center">
+                    <div class="image"><img src="/assets/img/posts/2019/paris-where-it-sizzles/thumbnail.jpg" alt="..." class="img-fluid"></div>
+                    <div class="title"><strong>Paris Where It Sizzles</strong>
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="date small "><i class="far fa-clock"></i> 21 September 2019</div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/travel/2019/japan-travel-blog-film-fans">
+                <div class="item d-flex align-items-center">
+                    <div class="image"><img src="/assets/img/posts/2019/japan-travel-blog-film-fans/thumbnail.jpg" alt="..." class="img-fluid"></div>
+                    <div class="title"><strong>Japan Travel Blog - Film Fans</strong>
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="date small "><i class="far fa-clock"></i> 24 February 2019</div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/travel/2019/japan-travel-blog-mount-fuji">
+                <div class="item d-flex align-items-center">
+                    <div class="image"><img src="/assets/img/posts/2019/japan-travel-blog-mount-fuji/thumbnail.jpg" alt="..." class="img-fluid"></div>
+                    <div class="title"><strong>Japan Travel Blog - Mount Fuji</strong>
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="date small "><i class="far fa-clock"></i> 20 February 2019</div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+        <!-- Widget [Categories Widget]-->
+        <div class="widget categories">
+            <header>
+                <h3 class="h6">Categories</h3>
+            </header>
+            <div class="item d-flex justify-content-between">
+                <a href="/travel/">travel</a>
+                <span>[ 10 ]</span>
+            </div>
+            <div class="item d-flex justify-content-between">
+                <a href="/news/">news</a>
+                <span>[ 1 ]</span>
+            </div>
+        </div>
+    </div>
+</aside>
+        
+    </div>
+    </section><footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2020 <b><em>TheTravelSlugs</em></b></p>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-end">
+                    <ul>
+                        <li class="list-inline-item"><a class="btn p-0" href="mailto: thetravelslugs@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+                        <li class="list-inline-item"><a class="btn p-0" href="https://www.instagram.com/travelslugs/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                        <li class="list-inline-item"><a class="btn disabled p-0" aria-disabled="true"><i class="fab fa-twitter-square"></i></a></li>
+                        <li class="list-inline-item"><a class="btn disabled p-0" aria-disabled="true"><i class="fab fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
+<script>
+  window.store = {
+    
+      "news-2020-welcome": {
+        "title": "Welcome to _The Travel Slugs_",
+        "description": "A couple from London who are super passionate about travelling, eating and sharing what we learned!",
+        "thumbnail": "",
+        "category": "news",
+        "tag": "",
+        "url": "/news/2020/welcome"
+      }
+      ,
+    
+      "travel-2020-roman-holiday": {
+        "title": "Roman Holiday",
+        "description": "Our love of history and food combine in Italy's beautiful capital city",
+        "thumbnail": "",
+        "category": "travel",
+        "tag": "featured, italy, rome, city-trip",
+        "url": "/travel/2020/roman-holiday"
+      }
+      ,
+    
+      "travel-2019-paris-where-it-sizzles": {
+        "title": "Paris Where It Sizzles",
+        "description": "From strolls along the Seine, to picnics in the park with a glass of wine, Paris is the ultimate city break",
+        "thumbnail": "",
+        "category": "travel",
+        "tag": "featured, france, paris, city-trip",
+        "url": "/travel/2019/paris-where-it-sizzles"
+      }
+      ,
+    
+      "travel-2019-japan-travel-blog-film-fans": {
+        "title": "Japan Travel Blog - Film Fans",
+        "description": "From Studio Ghibli to Tarantino, Tokyo is a film fan's dream",
+        "thumbnail": "",
+        "category": "travel",
+        "tag": "japan, tokyo, city-trip",
+        "url": "/travel/2019/japan-travel-blog-film-fans"
+      }
+      ,
+    
+      "travel-2019-japan-travel-blog-mount-fuji": {
+        "title": "Japan Travel Blog - Mount Fuji",
+        "description": "A visit to a traditional onsen, nine-course dinner & an engagement!",
+        "thumbnail": "",
+        "category": "travel",
+        "tag": "featured, japan, kawaguchiko, wellness",
+        "url": "/travel/2019/japan-travel-blog-mount-fuji"
+      }
+      ,
+    
+      "travel-2019-japan-travel-blog-kyoto": {
+        "title": "Japan Travel Blog - Kyoto",
+        "description": "The traditional, beautiful Kyoto, filled with historic Buddhist temples and Shinto Shrines",
+        "thumbnail": "",
+        "category": "travel",
+        "tag": "japan, kyoto, city-trip",
+        "url": "/travel/2019/japan-travel-blog-kyoto"
+      }
+      ,
+    
+      "travel-2019-japan-travel-blog-shinjuku": {
+        "title": "Japan Travel Blog - Shinjuku",
+        "description": "Skyscrapers, samurai, shopping and the busiest crossing in the world in Shinjuku",
+        "thumbnail": "",
+        "category": "travel",
+        "tag": "japan, tokyo, city-trip",
+        "url": "/travel/2019/japan-travel-blog-shinjuku"
+      }
+      ,
+    
+      "travel-2019-japan-travel-blog-akihabara": {
+        "title": "Japan Travel Blog - Akihabara",
+        "description": "Tokyo's 'Electric City,' is home to 'otuku' culture, colourful arcades and vintage video game stores.",
+        "thumbnail": "",
+        "category": "travel",
+        "tag": "japan, tokyo, city-trip",
+        "url": "/travel/2019/japan-travel-blog-akihabara"
+      }
+      ,
+    
+      "travel-2019-what-to-know-before-you-go-to-japan": {
+        "title": "What to know before you go to Japan",
+        "description": "From train travel to pocket WiFi, our top tips of what to know before you arrive in Japan",
+        "thumbnail": "",
+        "category": "travel",
+        "tag": "japan",
+        "url": "/travel/2019/what-to-know-before-you-go-to-japan"
+      }
+      ,
+    
+      "travel-2018-isle-of-skye": {
+        "title": "Isle of Skye",
+        "description": "A magical hiking holiday in the Scottish Isle of Skye",
+        "thumbnail": "",
+        "category": "travel",
+        "tag": "featured, united-kingdom, scotland, isle-of-skye, outdoors",
+        "url": "/travel/2018/isle-of-skye"
+      }
+      ,
+    
+      "travel-2017-brittany-and-normandy": {
+        "title": "Brittany and Normandy",
+        "description": "Our first summer holiday together was a road trip to Brittany and Normandy",
+        "thumbnail": "",
+        "category": "travel",
+        "tag": "france, st-malo, carentan, beach",
+        "url": "/travel/2017/brittany-and-normandy"
+      }
+      
+    
+  };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+<script src="/assets/js/search.js"></script>
+
+
+<script>
+    <!-- Create map and set it its default values -->
+    var map = L.map('mapid', {scrollWheelZoom: false}).setView([42.5, 0], 2);
+    map.setMinZoom(2);
+    map.setMaxZoom(12);
+
+    <!-- Create tile -->
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png", {}).addTo(map);
+    <!-- Create info field -->
+    var info = L.control({position: 'bottomleft'});
+
+    info.onAdd = function (map) {
+        this._div = L.DomUtil.create('div', 'info');
+        this.update();
+        return this._div;
+    };
+
+    info.update = function (props) {
+        this._div.innerHTML = (props ?
+            '<b>' + props.name + '</b>: ' + props.num_visits + ' visit(s)'
+            : 'Hover over a country' );
+    };
+
+    info.addTo(map);
+    <!-- Define style function -->
+    function getColor(d) {
+        return d > 3 ? '#800026' :
+               d > 2 ? '#E31A1C' :
+               d > 1 ? '#FD8D3C' :
+               d > 0 ? '#FED976' :
+                       '#FFFFFF' ;
+    }
+
+    function getOpacity(d) {
+        return d > 0 ? 0.75 :
+                       0 ;
+    }
+
+    <!-- Define styles -->
+    function styleCountryHeat(feature) {
+        return {
+            fillColor: getColor(feature.properties.num_visits),
+            weight: 1,
+            opacity: 0.5,
+            color: 'black',
+            dashArray: '5',
+            fillOpacity: 1,
+        };
+    }
+
+    <!-- Define features -->
+    function highlightFeature(e) {
+        var layer = e.target;
+
+        if (layer.feature.properties.num_visits > 0) {
+            layer.setStyle({
+                opacity: 0.5,
+                fillColor: '#23272b',
+                dashArray: '0',
+                fillOpacity: 1
+            });
+        }
+
+        info.update(layer.feature.properties);
+    }
+
+    var geojson;
+
+    function resetHighlight(e) {
+        geojson.resetStyle(e.target);
+        info.update();
+    }
+
+    function onClick(e) {
+        var layer = e.target;
+        if (layer.feature.properties.num_visits > 0) {
+            window.open(e.target.feature.properties.url, '_self');
+        }
+    }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: onClick
+        });
+    }
+
+    <!-- add countries -->
+    $.getJSON("/assets/geo/world.json", function (data) {geojson = L.geoJson(data, {style: styleCountryHeat, onEachFeature: onEachFeature}).addTo(map);});
+
+</script>
+    
+</body>
+</html>
