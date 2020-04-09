@@ -1,1 +1,1 @@
-Sitemap: https://thetravelslugs.github.io/sitemap.xml
+Sitemap: http://thetravelslugs.com/sitemap.xml

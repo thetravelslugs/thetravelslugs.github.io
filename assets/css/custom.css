@@ -28,12 +28,6 @@ section {
     width: auto;
 }
 
-@media (max-width: 767px) {
-  .mapinfo {
-    display: none;
-  }
-}
-
 ul {
     padding-left: 33px;
     padding-bottom: 5px;
