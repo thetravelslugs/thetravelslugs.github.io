@@ -1,1 +1,1 @@
-{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-73.968853, 40.774675]}, "properties": {"name": "New York City", "num_visits": 0}}]}
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-73.968853, 40.774675]}, "properties": {"name": "New York City", "num_visits": 1}}]}
