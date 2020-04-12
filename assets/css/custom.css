@@ -5,6 +5,10 @@
     text-justify: inter-word;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
 .navbar {
     min-height:28px;
     line-height: 14px;
@@ -30,7 +34,7 @@ section {
 
 ul {
     padding-left: 33px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .widget.form .form-group {
